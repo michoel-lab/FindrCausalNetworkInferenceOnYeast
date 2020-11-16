@@ -1,1 +1,89 @@
-# FindrCausalNetworkInferenceOnYeast
+# FindrCausalInferenceOnYeast
+
+This repository contains python code to reproduce the causal networks inferred from differential gene expression in yeast as published in [1].
+The code relies on Findr which should be installed according to the
+instructions provided in the corresponding repository [2].
+
+# How to reproduce the analysis:
+
+## Data:
+
+The following files are needed and should be put in a "data/input" folder:
+
+### a. Expression data and genotypes from [3]:
+
+The data from the supporting information of [3] at [ https://figshare.com/s/83bddc1ddf3f97108ad4 ].
+The following files are used:
+   - expression data in: SI_Data_01_expressionValues.txt.zip
+   - covariates for expression data in: SI_Data_02_covariates.xlsx 
+   - genotypes in: SI_Data_03_genotypes.txt.zip
+   - eQTLs in: SI_Data_04_eQTL.xlsx
+
+
+### b. YEASTRACT ground truth data to compute precision and recall [4]:
+
+Regulation Matrices can be  obtained from [ http://www.yeastract.com/formregmatrix.php ].
+We retrieved the full ground-truth matrices containing all reported interactions of the following types from the YEASTRACT website: DNA binding evidence was used as the “Binding”, expression evidence including TFs acting as activators and those acting as inhibitors was used as the “Expression”, DNA binding and expression evidence was used as the “Binding & Expression”. Self regulation was removed from all ground truths.
+
+### c. Gene annotations from Ensembl [5]:
+
+We use a file listing all genes, pseudogenes, etc. from Ensemble release 83: Saccharomyces_cerevisiae.R64-1-1.83.gff3 .
+The file should be processed with sed commands given in  sed_processing_gff.sh .
+The result is a file where columns are separated by spaces, it contains gene name, start, end and a few more annotations.
+
+## Required python packages:
+
+   This pipeline has been tests in python version 3.7.4.
+   The scripts requires Findr and the following packages:
+
+   - numpy, pandas, 
+   - statsmodels,
+   - roman,
+   - matplotlib and seaborn
+
+
+## Steps to run the analysis:
+
+The scripts to run the analysis with Findr and to obtain binary causal networks for FDR thresholds given in [1].
+The scripts should be run in the order they are numbered, the shell script "run_all.sh"  can
+run them all but this may take a while.
+
+
+## References:
+
+1. Ludl, A-A and Michoel, T (2020) Comparison between instrumental variable and mediation-based methods for reconstructing causal gene networks in yeast
+   (submitted)
+
+arxiv: https://arxiv.org/abs/2010.07417
+
+biorxiv: https://biorxiv.org/cgi/content/short/2020.10.13.337501v1
+
+2. Findr paper:
+    Wang, L and  Michoel, T (2017) PLoS Comput Biol 13(8): e1005703.
+    paper: https://doi.org/10.1371/journal.pcbi.1005703
+
+    source code: https://github.com/lingfeiwang/findr
+
+    python package: https://github.com/lingfeiwang/findr-python
+
+
+3. Albert, F. W., Bloom, J. S., Siegel, J., Day, L., & Kruglyak, L. (2018). Genetics of trans-regulatory variation in gene expression. Elife, 7, e35471. doi:10.7554/eLife.35471
+    paper: https://doi.org/10.7554/elife.35471
+
+    data: https://figshare.com/s/83bddc1ddf3f97108ad4
+
+4. Yeastract regulatory network:
+    http://www.yeastract.com/formregmatrix.php
+
+    YEASTRACT+: a portal for cross-species comparative genomics of transcription regulation in yeasts.
+    Nucleic Acids Research, 48(D1):D642-D649   (doi:10.1093/nar/gkz859) 
+    P.T. Monteiro, J. Oliveira, P. Pais, M. Antunes, M. Palma, M. Cavalheiro, M. Galocha, C.P. Godinho, L.C. Martins, N. Bourbon, M.N. Mota, R.A. Ribeiro, R.Viana, I. Sá-Correia, M.C. Teixeira (2020)
+    https://doi.org/10.1093/nar/gkz859
+    
+5. Ensembl library for yeast (S. cerevisiae):
+       ftp://ftp.ensembl.org/pub/release-83/gff3/saccharomyces_cerevisiae/
+
+       http://www.ensembl.org/info/website/archives/index.html
+    
+       http://www.ensembl.org/Saccharomyces_cerevisiae/Info/Index?db=core
+
