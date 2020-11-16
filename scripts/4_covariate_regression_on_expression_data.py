@@ -11,7 +11,6 @@ import seaborn as sns
 import os
 
 import matplotlib.pylab as plt
-import seaborn as sns
 
 print('# Linear regression on gene expression:')
 

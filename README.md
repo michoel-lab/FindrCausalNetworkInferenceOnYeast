@@ -4,8 +4,6 @@ This repository contains python code to reproduce the causal networks inferred f
 The code relies on Findr which should be installed according to the
 instructions provided in the corresponding repository [2].
 
-# How to reproduce the analysis:
-
 ## Data:
 
 The following files are needed and should be put in a "data/input" folder:
@@ -33,13 +31,12 @@ The result is a file where columns are separated by spaces, it contains gene nam
 
 ## Required python packages:
 
-   This pipeline has been tests in python version 3.7.4.
-   The scripts requires Findr and the following packages:
-
+This pipeline has been tested in python version 3.7.4.
+The scripts requires Findr and the following packages:
    - numpy, pandas, 
    - statsmodels,
-   - roman,
-   - matplotlib and seaborn
+   - roman: to convert roman numerals to integers,
+   - matplotlib and seaborn.
 
 
 ## Steps to run the analysis:
@@ -47,6 +44,16 @@ The result is a file where columns are separated by spaces, it contains gene nam
 The scripts to run the analysis with Findr and to obtain binary causal networks for FDR thresholds given in [1].
 The scripts should be run in the order they are numbered, the shell script "run_all.sh"  can
 run them all but this may take a while.
+    - 1_select_strongest_cis_eqtls.py
+    - 2_prepare_genotype_data.py
+    - 3_reorder_expression_data.py
+    - 4_covariate_regression_on_expression_data.py
+    - 5_preprocessing_ensembl_data.sh
+    - 6_run_findr.py
+    - 7_select_yeastract_compatible_subset.py
+
+The script in "subsamples" can be used to run Findr on randomly selected subsamples of the yeast data:
+    - run_findr_subsampling_v9.py
 
 
 ## References:
@@ -54,9 +61,9 @@ run them all but this may take a while.
 1. Ludl, A-A and Michoel, T (2020) Comparison between instrumental variable and mediation-based methods for reconstructing causal gene networks in yeast
    (submitted)
 
-arxiv: https://arxiv.org/abs/2010.07417
+    arxiv: https://arxiv.org/abs/2010.07417
 
-biorxiv: https://biorxiv.org/cgi/content/short/2020.10.13.337501v1
+    biorxiv: https://biorxiv.org/cgi/content/short/2020.10.13.337501v1
 
 2. Findr paper:
     Wang, L and  Michoel, T (2017) PLoS Comput Biol 13(8): e1005703.
@@ -81,9 +88,10 @@ biorxiv: https://biorxiv.org/cgi/content/short/2020.10.13.337501v1
     https://doi.org/10.1093/nar/gkz859
     
 5. Ensembl library for yeast (S. cerevisiae):
-       ftp://ftp.ensembl.org/pub/release-83/gff3/saccharomyces_cerevisiae/
+    ftp://ftp.ensembl.org/pub/release-83/gff3/saccharomyces_cerevisiae/
 
-       http://www.ensembl.org/info/website/archives/index.html
+    Saccharomyces cerevisiae: http://www.ensembl.org/Saccharomyces_cerevisiae/Info/Index?db=core
+
+    Ensembl Archives: http://www.ensembl.org/info/website/archives/index.html
     
-       http://www.ensembl.org/Saccharomyces_cerevisiae/Info/Index?db=core
 
