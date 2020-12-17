@@ -67,19 +67,14 @@ The script in "subsamples" can be used to run Findr on randomly selected subsamp
 
 1. Ludl, A-A and Michoel, T (2020) Comparison between instrumental variable and mediation-based methods for reconstructing causal gene networks in yeast
    (accepted)
-
-    arxiv: https://arxiv.org/abs/2010.07417
-
-    biorxiv: https://biorxiv.org/cgi/content/short/2020.10.13.337501v1
+   - arxiv: https://arxiv.org/abs/2010.07417
+   - biorxiv: https://biorxiv.org/cgi/content/short/2020.10.13.337501v1
 
 2. Findr paper:
     Wang, L and  Michoel, T (2017) PLoS Comput Biol 13(8): e1005703.
-    
-    paper: https://doi.org/10.1371/journal.pcbi.1005703
-
-    source code: https://github.com/lingfeiwang/findr
-
-    python package: https://github.com/lingfeiwang/findr-python
+   - paper: https://doi.org/10.1371/journal.pcbi.1005703
+   - source code: https://github.com/lingfeiwang/findr
+   - python package: https://github.com/lingfeiwang/findr-python
 
 
 3. Albert, F. W., Bloom, J. S., Siegel, J., Day, L., & Kruglyak, L. (2018). Genetics of trans-regulatory variation in gene expression. Elife, 7, e35471. doi:10.7554/eLife.35471
