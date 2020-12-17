@@ -7,7 +7,8 @@ instructions provided in the corresponding repository [2].
 ## Results:
 
 The regulatory relationships between yeast genes as inferred using this pipeline (for tests P2, P2P3, P2P5 and P) and published in [1] are made made available as gzipped csv files in (data/predicted_networks). The columns are in the following format:
-regulator (name), target (name), weight (posterior probability).
+```regulator (name), target (name), weight (posterior probability).
+```
 
 ## Data:
 
@@ -48,7 +49,7 @@ The scripts requires Findr and the following packages:
 
 The scripts to run the analysis with Findr and to obtain binary causal networks for FDR thresholds given in [1].
 The scripts should be run in the order they are numbered, the shell script "run_all.sh"  can
-run them all, however this may take a while. Therefore we recommend to run them in order:
+run them all, however *this may take a while*. *Therefore we recommend to run them in order*:
    - 1_select_strongest_cis_eqtls.py
    - 2_prepare_genotype_data.py
    - 3_reorder_expression_data.py
