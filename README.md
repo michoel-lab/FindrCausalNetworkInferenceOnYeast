@@ -28,7 +28,7 @@ eQTLs | SI_Data_04_eQTL.xlsx
 ### b. YEASTRACT ground truth data to compute precision and recall [4]:
 
 Regulation Matrices can be  obtained from [ http://www.yeastract.com/formregmatrix.php ].
-We retrieved the full ground-truth matrices containing all reported interactions of the following types from the YEASTRACT website: DNA binding evidence was used as the “Binding”, expression evidence including TFs acting as activators and those acting as inhibitors was used as the “Expression”, DNA binding and expression evidence was used as the “Binding & Expression”. Self regulation was removed from all ground truths. The matrices we retrieved are available as gzipped csv files in `data/yeastract`.
+We retrieved the full ground-truth matrices containing all reported interactions of the following types from the YEASTRACT website: DNA binding evidence was used as the “Binding”, expression evidence including TFs acting as activators and those acting as inhibitors was used as the “Expression”, DNA binding and expression evidence was used as the “Binding & Expression”. Self regulation was removed from all ground truths. The matrices we retrieved are available as gzipped csv files in `data/input/yeastract`.
 
 ### c. Gene annotations from Ensembl [5]:
 
