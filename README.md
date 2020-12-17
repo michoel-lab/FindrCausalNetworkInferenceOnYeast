@@ -4,6 +4,12 @@ This repository contains python code to reproduce the causal networks inferred f
 The code relies on Findr which should be installed according to the
 instructions provided in the corresponding repository [2].
 
+## Results:
+
+The regulatory relationships between genes as inferred using this pipeline (for tests P2, P2P3, P2P5 and P) and published in [1] are made 
+we obtained are made available as gzipped csv files in (data/predicted_networks). The columns are in the following format
+regulator (name), target (name), weight (posterior probability).
+
 ## Data:
 
 The following files are needed and should be put in a "data/input" folder:
@@ -21,7 +27,7 @@ The following files are used:
 ### b. YEASTRACT ground truth data to compute precision and recall [4]:
 
 Regulation Matrices can be  obtained from [ http://www.yeastract.com/formregmatrix.php ].
-We retrieved the full ground-truth matrices containing all reported interactions of the following types from the YEASTRACT website: DNA binding evidence was used as the “Binding”, expression evidence including TFs acting as activators and those acting as inhibitors was used as the “Expression”, DNA binding and expression evidence was used as the “Binding & Expression”. Self regulation was removed from all ground truths.
+We retrieved the full ground-truth matrices containing all reported interactions of the following types from the YEASTRACT website: DNA binding evidence was used as the “Binding”, expression evidence including TFs acting as activators and those acting as inhibitors was used as the “Expression”, DNA binding and expression evidence was used as the “Binding & Expression”. Self regulation was removed from all ground truths. The matrices we retrieved are available as gzipped csv files in (data/yeastract).
 
 ### c. Gene annotations from Ensembl [5]:
 
@@ -53,7 +59,7 @@ run them all, however this may take a while. Therefore we recommend to run them 
    - 7_select_yeastract_compatible_subset.py
 
 The script in "subsamples" can be used to run Findr on randomly selected subsamples of the yeast data:
-    - run_findr_subsampling_v9.py
+   - run_findr_subsampling_v9.py
 
 
 ## References:
