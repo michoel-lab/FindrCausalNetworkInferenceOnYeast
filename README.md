@@ -1,4 +1,4 @@
-# FindrCausalInferenceOnYeast
+# FindrCausalInferenceOnYeast [![DOI](https://zenodo.org/badge/313364218.svg)](https://zenodo.org/badge/latestdoi/313364218)
 
 This repository contains python code to reproduce the causal networks inferred from differential gene expression in yeast as published in [1].
 The code relies on Findr which should be installed according to the
