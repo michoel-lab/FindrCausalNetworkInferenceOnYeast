@@ -70,6 +70,7 @@ The script in "subsamples" can be used to run Findr on randomly selected subsamp
    (accepted)
    - arxiv: https://arxiv.org/abs/2010.07417
    - biorxiv: https://biorxiv.org/cgi/content/short/2020.10.13.337501v1
+   - zenodo: https://zenodo.org/record/4340600
 
 2. Findr paper:
     Wang, L and  Michoel, T (2017) PLoS Comput Biol 13(8): e1005703.
