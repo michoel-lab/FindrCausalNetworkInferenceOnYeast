@@ -83,6 +83,7 @@ The script in "subsamples" can be used to run Findr on randomly selected subsamp
 
 
 3. Albert, F. W., Bloom, J. S., Siegel, J., Day, L., & Kruglyak, L. (2018). Genetics of trans-regulatory variation in gene expression. Elife, 7, e35471. doi:10.7554/eLife.35471
+    
     paper: https://doi.org/10.7554/elife.35471
 
     data: https://figshare.com/s/83bddc1ddf3f97108ad4
@@ -93,7 +94,8 @@ The script in "subsamples" can be used to run Findr on randomly selected subsamp
     YEASTRACT+: a portal for cross-species comparative genomics of transcription regulation in yeasts.
     Nucleic Acids Research, 48(D1):D642-D649   (doi:10.1093/nar/gkz859) 
     P.T. Monteiro, J. Oliveira, P. Pais, M. Antunes, M. Palma, M. Cavalheiro, M. Galocha, C.P. Godinho, L.C. Martins, N. Bourbon, M.N. Mota, R.A. Ribeiro, R.Viana, I. Sá-Correia, M.C. Teixeira (2020)
-    https://doi.org/10.1093/nar/gkz859
+    
+    paper: https://doi.org/10.1093/nar/gkz859
     
 5. Ensembl library for yeast (S. cerevisiae):
     ftp://ftp.ensembl.org/pub/release-83/gff3/saccharomyces_cerevisiae/
