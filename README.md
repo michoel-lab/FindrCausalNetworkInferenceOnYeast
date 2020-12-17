@@ -74,6 +74,7 @@ The script in "subsamples" can be used to run Findr on randomly selected subsamp
 
 2. Findr paper:
     Wang, L and  Michoel, T (2017) PLoS Comput Biol 13(8): e1005703.
+    
     paper: https://doi.org/10.1371/journal.pcbi.1005703
 
     source code: https://github.com/lingfeiwang/findr
