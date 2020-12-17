@@ -89,7 +89,7 @@ The script in "subsamples" can be used to run Findr on randomly selected subsamp
    - paper: https://doi.org/10.1093/nar/gkz859
     
 5. Ensembl library for yeast (S. cerevisiae):
-   - ftp://ftp.ensembl.org/pub/release-83/gff3/saccharomyces_cerevisiae/
+   - Ensemble release 83 (gff3 file): ftp://ftp.ensembl.org/pub/release-83/gff3/saccharomyces_cerevisiae/
    - Saccharomyces cerevisiae: http://www.ensembl.org/Saccharomyces_cerevisiae/Info/Index?db=core
    - Ensembl Archives: http://www.ensembl.org/info/website/archives/index.html
     
