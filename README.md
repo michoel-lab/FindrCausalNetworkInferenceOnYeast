@@ -18,10 +18,12 @@ The following files are needed and should be put in a "data/input" folder:
 
 The data from the supporting information of [3] at [ https://figshare.com/s/83bddc1ddf3f97108ad4 ].
 The following files are used:
-   - expression data in: SI_Data_01_expressionValues.txt.zip
-   - covariates for expression data in: SI_Data_02_covariates.xlsx 
-   - genotypes in: SI_Data_03_genotypes.txt.zip
-   - eQTLs in: SI_Data_04_eQTL.xlsx
+Data | Filename
+-----|---------
+expression data | SI_Data_01_expressionValues.txt.zip
+covariates for expression data | SI_Data_02_covariates.xlsx 
+genotypes | SI_Data_03_genotypes.txt.zip
+eQTLs | SI_Data_04_eQTL.xlsx
 
 
 ### b. YEASTRACT ground truth data to compute precision and recall [4]:
@@ -31,8 +33,8 @@ We retrieved the full ground-truth matrices containing all reported interactions
 
 ### c. Gene annotations from Ensembl [5]:
 
-We use a file listing all genes, pseudogenes, etc. from Ensemble release 83: Saccharomyces_cerevisiae.R64-1-1.83.gff3 .
-The file should be processed with sed commands given in  sed_processing_gff.sh .
+We use a file listing all genes, pseudogenes, etc. from Ensemble release 83: `Saccharomyces_cerevisiae.R64-1-1.83.gff3` .
+The file should be processed with sed commands given in  `sed_processing_gff.sh` .
 The result is a file where columns are separated by spaces, it contains gene name, start, end and a few more annotations.
 
 ## Required python packages:
@@ -49,7 +51,7 @@ The scripts requires Findr and the following packages:
 
 The scripts to run the analysis with Findr and to obtain binary causal networks for FDR thresholds given in [1].
 The scripts should be run in the order they are numbered, the shell script "run_all.sh"  can
-run them all, however *this may take a while*. *Therefore we recommend to run them in order*:
+run them all, however *this may take a while*. **Therefore we recommend to run them in order**:
    - 1_select_strongest_cis_eqtls.py
    - 2_prepare_genotype_data.py
    - 3_reorder_expression_data.py
