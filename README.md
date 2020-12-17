@@ -43,7 +43,7 @@ The scripts requires Findr and the following packages:
 
 The scripts to run the analysis with Findr and to obtain binary causal networks for FDR thresholds given in [1].
 The scripts should be run in the order they are numbered, the shell script "run_all.sh"  can
-run them all but this may take a while.
+run them all, however this may take a while. Therefore we recommend to run them in order:
     - 1_select_strongest_cis_eqtls.py
     - 2_prepare_genotype_data.py
     - 3_reorder_expression_data.py
@@ -59,7 +59,7 @@ The script in "subsamples" can be used to run Findr on randomly selected subsamp
 ## References:
 
 1. Ludl, A-A and Michoel, T (2020) Comparison between instrumental variable and mediation-based methods for reconstructing causal gene networks in yeast
-   (submitted)
+   (accepted)
 
     arxiv: https://arxiv.org/abs/2010.07417
 
