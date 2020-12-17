@@ -6,8 +6,7 @@ instructions provided in the corresponding repository [2].
 
 ## Results:
 
-The regulatory relationships between genes as inferred using this pipeline (for tests P2, P2P3, P2P5 and P) and published in [1] are made 
-we obtained are made available as gzipped csv files in (data/predicted_networks). The columns are in the following format
+The regulatory relationships between yeast genes as inferred using this pipeline (for tests P2, P2P3, P2P5 and P) and published in [1] are made made available as gzipped csv files in (data/predicted_networks). The columns are in the following format:
 regulator (name), target (name), weight (posterior probability).
 
 ## Data:
