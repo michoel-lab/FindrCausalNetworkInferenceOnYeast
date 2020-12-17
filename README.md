@@ -44,13 +44,13 @@ The scripts requires Findr and the following packages:
 The scripts to run the analysis with Findr and to obtain binary causal networks for FDR thresholds given in [1].
 The scripts should be run in the order they are numbered, the shell script "run_all.sh"  can
 run them all, however this may take a while. Therefore we recommend to run them in order:
-    - 1_select_strongest_cis_eqtls.py
-    - 2_prepare_genotype_data.py
-    - 3_reorder_expression_data.py
-    - 4_covariate_regression_on_expression_data.py
-    - 5_preprocessing_ensembl_data.sh
-    - 6_run_findr.py
-    - 7_select_yeastract_compatible_subset.py
+   - 1_select_strongest_cis_eqtls.py
+   - 2_prepare_genotype_data.py
+   - 3_reorder_expression_data.py
+   - 4_covariate_regression_on_expression_data.py
+   - 5_preprocessing_ensembl_data.sh
+   - 6_run_findr.py
+   - 7_select_yeastract_compatible_subset.py
 
 The script in "subsamples" can be used to run Findr on randomly selected subsamples of the yeast data:
     - run_findr_subsampling_v9.py
